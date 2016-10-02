@@ -1,13 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    anticuado (0.1.0)
+    anticuado (0.1.1)
+    git (1.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   anticuado
+  git
 
 BUNDLED WITH
    1.12.5
