@@ -24,4 +24,4 @@ p "=======iOS/CocoaPods========"
 
 outdated_ios = ::Anticuado::IOS::CocoaPods.outdated project: web_socket_ios
 out_ios = ::Anticuado::IOS::CocoaPods.format outdated_ios
-p out_ex
+p out_ios
