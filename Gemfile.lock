@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    anticuado (0.1.1)
+    anticuado (0.1.2)
     git (1.3.0)
 
 PLATFORMS
