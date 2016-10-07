@@ -16,12 +16,12 @@ clone_or_pull("https://github.com/KazuCocoa/WebSocketDemoForiOS", web_socket_ios
 
 p "=======Elixir========"
 
-outdated_ex = ::Anticuado::Elixir::Hex.outdated project: my_chat_ex_path
+outdated_ex = ::Anticuado::Elixir::Hex.outdated my_chat_ex_path
 out_ex = ::Anticuado::Elixir::Hex.format outdated_ex
 p out_ex
 
 p "=======iOS/CocoaPods========"
 
-outdated_ios = ::Anticuado::IOS::CocoaPods.outdated project: web_socket_ios
+outdated_ios = ::Anticuado::IOS::CocoaPods.outdated web_socket_ios
 out_ios = ::Anticuado::IOS::CocoaPods.format outdated_ios
 p out_ios

@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
 gem "git"
-gem "anticuado"
+gem "anticuado", "~> 0.2.0"
