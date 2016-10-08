@@ -11,6 +11,6 @@ before_install:
   - bundle install
 
 script:
-  - elixir -v
+  - mix local.hex --force
   - bundle exec ruby main.rb
 
