@@ -11,5 +11,6 @@ before_install:
   - bundle install
 
 script:
+  - elixir -v
   - bundle exec ruby main.rb
 
