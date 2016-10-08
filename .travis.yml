@@ -5,6 +5,8 @@ rvm:
   - 2.3.0
 
 before_install:
+  - brew update
+  - brew install elixir
   - gem install bundler -v 1.12.5
   - bundle install
 
