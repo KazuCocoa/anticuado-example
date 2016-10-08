@@ -1,0 +1,16 @@
+language: objective-c
+osx_image: xcode7.3
+cache: bundler
+rvm:
+  - 2.3.0
+
+before_install:
+  - brew update
+  - brew install carthage
+  - carthage update --platform ios
+  - gem install bundler -v 1.12.5
+  - bundle install
+
+script:
+  - bundle exec ruby main.rb
+
