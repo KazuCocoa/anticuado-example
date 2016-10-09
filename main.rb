@@ -32,12 +32,12 @@ p out_ios_co
 p "=======iOS/Carthage========"
 
 outdated_ios_ca = ::Anticuado::IOS::Carthage.outdated carthage_sample
-out_ios_ca = ::Anticuado::IOS::CocoaPods.format outdated_ios_ca
+out_ios_ca = ::Anticuado::IOS::Carthage.format outdated_ios_ca
 p out_ios_ca
 
-p "=======Android/Gradle========"
-
-::Anticuado::Java::Gradle.outdated android_sample, true
-json_android = ::Anticuado::Java::Gradle.parse_json "#{android_sample}/build/dependencyUpdates/report.json"
-out_android = ::Anticuado::Java::Gradle.format json_android
-p out_android
+# TODO: Move to other repository because android
+# p "=======Android/Gradle========"
+# ::Anticuado::Java::Gradle.outdated android_sample, true
+# json_android = ::Anticuado::Java::Gradle.parse_json "#{android_sample}/build/dependencyUpdates/report.json"
+# out_android = ::Anticuado::Java::Gradle.format json_android
+# p out_android
