@@ -6,7 +6,7 @@ rvm:
 
 before_install:
   - brew update
-  - brew install elixir android-sdk
+  - brew install elixir android-sdk node
   - export ANDROID_HOME=/usr/local/opt/android-sdk
   - gem install bundler -v 1.12.5
   - bundle install
