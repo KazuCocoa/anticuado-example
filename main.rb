@@ -26,7 +26,6 @@ p out_ex
 p "=========npm=========="
 
 `npm install -g brunch`
-`npm install -g coffee-script@1.10.0`
 Dir.chdir my_chat_ex_path
 p `mix deps.get`
 Dir.chdir "../.."
