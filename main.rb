@@ -23,6 +23,12 @@ outdated_ex = ::Anticuado::Elixir::Hex.outdated my_chat_ex_path
 out_ex = ::Anticuado::Elixir::Hex.format outdated_ex
 p out_ex
 
+p "=========npm=========="
+
+outdated_npm = ::Anticuado::JavaScript::Npm.outdated my_chat_ex_path
+out_npm = ::Anticuado::JavaScript::Npm.format outdated_npm
+p out_npm
+
 p "=======iOS/CocoaPods========"
 
 outdated_ios_co = ::Anticuado::IOS::CocoaPods.outdated cocapods_sample
