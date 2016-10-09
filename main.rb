@@ -25,6 +25,7 @@ p out_ex
 
 p "=========npm=========="
 
+`npm install -g brunch`
 Dir.chdir my_chat_ex_path
 `mix deps.get`
 Dir.chdir "../.."
