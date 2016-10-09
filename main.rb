@@ -25,6 +25,10 @@ p out_ex
 
 p "=========npm=========="
 
+Dir.chdir my_chat_ex_path
+`mix deps.get`
+Dir.chdir "../.."
+
 outdated_npm = ::Anticuado::JavaScript::Npm.outdated my_chat_ex_path
 out_npm = ::Anticuado::JavaScript::Npm.format outdated_npm
 p out_npm
