@@ -25,9 +25,10 @@ p out_ex
 
 p "=========npm=========="
 
-`npm install -g brunch coffee-script@1.10.0`
+p `npm install -g brunch`
+p `npm install coffee-script@1.10.0`
 Dir.chdir my_chat_ex_path
-`mix deps.get`
+p `mix deps.get`
 Dir.chdir "../.."
 
 outdated_npm = ::Anticuado::JavaScript::Npm.outdated my_chat_ex_path
