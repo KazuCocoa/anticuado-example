@@ -2,6 +2,10 @@
 
 This repository is example of [anticuado](https://github.com/KazuCocoa/anticuado).
 
+# Example on Travis
+
+[![Build Status](https://travis-ci.org/KazuCocoa/anticuado-example.svg?branch=master)](https://travis-ci.org/KazuCocoa/anticuado-example)
+
 # steps
 1. Clone this repository
 2. Run `bundle install`
