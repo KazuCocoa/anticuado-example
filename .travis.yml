@@ -10,6 +10,7 @@ before_install:
   - export ANDROID_HOME=/usr/local/opt/android-sdk
   - gem install bundler -v 1.12.5
   - bundle install
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
 
 script:
   - bundle exec ruby main.rb

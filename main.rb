@@ -2,6 +2,7 @@ require "git"
 require "anticuado"
 
 my_chat_ex_path = "project/my_chat_ex"
+yarn_path = "project/sample-yarn"
 cocapods_sample = "project/WebSocketDemoForiOS"
 carthage_sample = "project/MySandBoxApp"
 android_sample = "project/DroidTestHelper"
@@ -13,6 +14,7 @@ rescue
 end
 
 clone_or_pull("https://github.com/KazuCocoa/my_chat_ex", my_chat_ex_path)
+clone_or_pull("https://github.com/KazuCocoa/sample-yarn", yarn_path)
 clone_or_pull("https://github.com/KazuCocoa/WebSocketDemoForiOS", cocapods_sample)
 clone_or_pull("https://github.com/KazuCocoa/MySandBoxApp", carthage_sample)
 clone_or_pull("https://github.com/KazuCocoa/DroidTestHelper", android_sample)
@@ -27,13 +29,20 @@ p "=========npm=========="
 
 `npm install -g brunch`
 Dir.chdir my_chat_ex_path
-p `mix deps.get`
+`mix deps.get`
 Dir.chdir "../.."
 
 outdated_npm = ::Anticuado::JavaScript::Npm.outdated my_chat_ex_path
 p outdated_npm
 out_npm = ::Anticuado::JavaScript::Npm.format outdated_npm
 p out_npm
+
+p "=========yarn=========="
+
+outdated_yarn = ::Anticuado::JavaScript::Yarn.outdated yarn_path
+p outdated_yarn
+out_yarn = ::Anticuado::JavaScript::Yarn.format outdated_yarn
+p out_yarn
 
 p "=======iOS/CocoaPods========"
 
