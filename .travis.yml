@@ -11,6 +11,7 @@ before_install:
   - gem install bundler -v 1.12.5
   - bundle install
   - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - source /Users/travis/.bashrc
 
 script:
   - bundle exec ruby main.rb
